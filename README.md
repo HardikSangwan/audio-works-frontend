@@ -1,24 +1,20 @@
-# hello-world
+## Emotech Assessment Files Setup
 
-## Project setup
-```
-npm install
-```
+**Frontend: Vue**
+**Backend: Java**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Load Docker Images from tar archives
 
-### Compiles and minifies for production
 ```
-npm run build
+docker --input demofrontend.tar
+docker --input demobackend.tar
 ```
 
-### Lints and fixes files
+Run backend and frontend
+
 ```
-npm run lint
+docker run -p 8080:8080 demobackend
+docker run -p 8081:8080 demofrontend
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+

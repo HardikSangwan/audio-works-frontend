@@ -5,6 +5,8 @@
 
 Load Docker Images from tar archives
 
+<img src='Frontend_Screenshot.png'>
+
 ```
 docker --input demofrontend.tar
 docker --input demobackend.tar
